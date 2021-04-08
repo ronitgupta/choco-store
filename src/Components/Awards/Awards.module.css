@@ -1,0 +1,29 @@
+.Awards{
+    height: 55vh;
+    width: 100vw;
+    background-color: rgb(19, 8, 0);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.Awards section{
+    margin: 0 5vw;
+    display: inline-block;
+}
+
+.Number{
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.Desc{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: darkgray;
+}

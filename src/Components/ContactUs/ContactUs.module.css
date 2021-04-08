@@ -1,0 +1,60 @@
+.ContactUs{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: crimson;
+    background: url('../../assets/images/contact.jpg') no-repeat;
+    background-size: cover;
+}
+
+.Heading{
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-family: cursive;
+    padding-top: 2rem;
+    padding-left: 10vw;
+    text-align: center;
+}
+
+.Line{
+    padding: 0;
+    margin: 0;
+    color: mediumvioletred;
+    text-align: center;
+    padding-left: 10vw;
+    font-weight: bolder;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.Form{
+    color: olivedrab;
+    font-weight: bolder;
+    margin: 2rem 0;
+    padding: 0;
+    margin-top: 8vh;
+    margin-left: 45vw;
+    font-size: 1.5rem;
+}
+
+.Form *{
+    display: block;
+}
+
+.Form input{
+    width: 25vw;
+    font-size: 1.5rem;
+}
+
+.Form textarea{
+    resize: vertical;
+    width: 40vw;
+    
+    font-size: 1.125rem;
+}
+
+.Label{
+    margin-top: 2rem;
+}

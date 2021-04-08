@@ -1,0 +1,28 @@
+.NavigationItem{
+    display: flex;
+    background-color: rgb(47, 17, 1);
+    padding-bottom: 5px;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.125rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.NavigationItem a{
+    margin: 0;
+    padding: 2% 1vmax;
+    color: white;
+    text-decoration: none;
+}
+
+.NavigationItem a:hover{
+    background-color: rgb(90, 17, 1);
+    cursor: pointer;
+}
+
+.NavigationItem img{
+    width: 7%;
+    height: 5%;
+} 

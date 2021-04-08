@@ -1,0 +1,39 @@
+.Products{
+    background: rgb(19, 8, 0);
+    width: 100vw;
+    height: 120vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Heading{
+    margin: 0;
+    padding-top: 5rem;
+    font-size: 4.5rem;
+    text-align: center;
+    color: white;
+    font-family: cursive;   
+}
+
+.Line{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(255, 242, 55);;
+    font-weight: bolder;
+}
+
+.Left{
+    color: white;
+    display: inline;
+    margin-left: 1%;
+    vertical-align: middle;
+    padding-bottom: 15rem;
+}
+
+.Right{
+    margin-right: 1%;
+    color: white;
+    padding-top: 15rem;
+    display: inline;
+}

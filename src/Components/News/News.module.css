@@ -1,0 +1,60 @@
+.News{
+    background-color: rgb(19, 8, 0);
+    width: 100vw;
+    height: 70vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.Title{
+    font-size: 4rem;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    margin: 0;
+    line-height: 2rem;
+}
+
+.Line{
+    color: yellow;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+.Image{
+    width: 20vw;
+    height: 20vh;
+    box-shadow: white 0px 0px;
+    padding: 0;
+    margin: 0
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vw;
+    margin-top: 10vh;
+}
+
+.container a{
+    font-size: 1rem;
+    color:rgb(211, 120, 55);
+    text-decoration: none;    
+}
+
+.container p{
+    width: 20vw;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    font-style: oblique;
+    line-height: 1.12;
+    font-size: 1.125rem;
+    word-spacing: 0.6vw;
+}

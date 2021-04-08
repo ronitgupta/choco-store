@@ -1,0 +1,40 @@
+.AboutChoco{
+    background: url('../../assets/images/coco-production.jpg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Section{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0,0.5);
+    height: 100%;
+    text-align: center;
+    width: 55%;
+}
+
+.Heading{
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 3rem;
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+.Line{
+    color: yellow;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.Desc{
+    color: rgb(246, 246, 246);
+    margin: 5% 10%;
+    font-size: 1.25rem;
+}

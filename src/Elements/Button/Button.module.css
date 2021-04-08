@@ -1,0 +1,15 @@
+.AddToCart{
+    font-size: 1.5rem;
+    background: transparent;
+    color: rgb(247, 17, 1);
+    border: 1px solid rgb(247, 17, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.AddToCart:hover{
+    color: white;
+    background: rgb(85, 27, 22);;
+    border: 1px solid rgb(85, 27, 22);
+}

@@ -1,0 +1,17 @@
+.Testimonials{
+    background: url('../../assets/images/testimonial.jpg') no-repeat;
+    width: 100vw;
+    background-size: cover;
+    height: 215vh;
+}
+
+.Title{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 3rem;
+}
