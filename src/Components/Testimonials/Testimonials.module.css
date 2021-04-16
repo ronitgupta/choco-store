@@ -2,7 +2,10 @@
     background: url('../../assets/images/testimonial.jpg') no-repeat;
     width: 100vw;
     background-size: cover;
-    height: 215vh;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10vh;
 }
 
 .Title{
@@ -13,5 +16,5 @@
     color: white;
     text-align: center;
     text-decoration: underline;
-    padding-top: 3rem;
+    padding: 3rem 0;
 }

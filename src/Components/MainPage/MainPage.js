@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Title from '../Title/Title';
@@ -10,8 +11,16 @@ import News from '../News/News';
 import Awards from '../Awards/Awards';
 import History from '../History/History';
 import ContactUs from '../ContactUs/ContactUs';
+import Login from '../Login/Login';
 
-const MainPage = () => {
+const MainPage = props => {
+
+    useEffect(() => {
+        props.loginClicked ? 
+        document.body.style.overflow = 'hidden' :
+        document.body.style.overflow = 'initial';
+    }, [props.loginClicked])
+
     return (
         <React.Fragment>
             <NavigationItem />
@@ -24,8 +33,13 @@ const MainPage = () => {
             <History />
             <News />
             <ContactUs />
+            {props.loginClicked ? <Login /> : null}
         </React.Fragment>
     );
 }
 
-export default MainPage;
+const mapStateToProps = state => ({
+    loginClicked : state.loginClicked,
+});
+
+export default connect(mapStateToProps)(MainPage);

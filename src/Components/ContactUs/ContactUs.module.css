@@ -1,8 +1,9 @@
 .ContactUs{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
     padding: 0;
+    padding-bottom: 10vh;
     color: crimson;
     background: url('../../assets/images/contact.jpg') no-repeat;
     background-size: cover;
@@ -43,9 +44,26 @@
     display: block;
 }
 
-.Form input{
+.Form input[type="text"],
+.Form input[type="email"]{
     width: 25vw;
     font-size: 1.5rem;
+}
+
+.Form input[type="submit"]{
+    background: transparent;
+    font-size: 1.5rem;
+    color: crimson;
+    padding: 0.5rem 1.5rem;
+    border: 4px solid crimson;
+    border-radius: 1rem;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+.Form input[type="submit"]:hover{
+    background: crimson;
+    color: white;
 }
 
 .Form textarea{
@@ -57,4 +75,35 @@
 
 .Label{
     margin-top: 2rem;
+}
+
+@media(max-width: 600px){
+    .Heading{
+        color: brown;
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .Line{
+        padding: 0;
+        line-height: 2rem;
+    }
+
+    .Form{
+        margin: 5vh 15vw;
+        min-width: 70vw;
+        font-size: 1.5rem;
+    }
+
+    .Form input[type="text"],
+    .Form input[type="email"]{
+        width: 70vw;
+        font-size: 1.5rem;
+    }
+    
+    .Form textarea{
+        resize: vertical;
+        width: 70vw;
+        font-size: 1.125rem;
+    }
 }

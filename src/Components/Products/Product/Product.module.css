@@ -25,3 +25,28 @@
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+
+@media(max-width: 600px){
+    .Product{
+        display: block;
+        width: 50vw;
+        height: auto;
+        margin: 5vh 25vw;
+        margin-bottom: 0;
+    }
+
+    .Image{
+        width: 50vw;
+        height: 50vw;
+        padding: 0; 
+    }
+
+    .Title{
+        margin-top: 3vh;       
+    }
+
+    .Price{
+        margin-top: 2vh;
+        font-size: 1.65rem;
+    }
+}

@@ -1,7 +1,7 @@
 .Special{
     background-color: rgb(19, 8, 0);
     width: 100vw;
-    height: 125vh;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -17,12 +17,14 @@
 }
 
 .Line{
+    line-height: 0;
     color: yellow;
     text-align: center;
     font-size: 2.25rem;
     font-weight: bolder;
     padding: 0;
     margin: 0;
+    padding-bottom: 2rem;
 }
 
 .Container{
@@ -52,7 +54,7 @@
 .Desc{
     color: rgb(216, 216, 216, 0.9);
     margin: 0 2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .Price{
@@ -93,4 +95,60 @@
 
 .Button{
     margin: 0 38%
+}
+
+@media( max-width : 600px){
+
+    .Special{
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    .Line{
+        padding-bottom: 2rem;
+    }
+
+    .Container{
+        display: block;
+    }
+
+    .Image{
+        width: 80vw;
+        margin-top: 5vh;
+        margin-left: 10vw;
+    }
+
+    .Title{
+        font-size: 4rem;
+    }
+
+    .About{
+        width: 80vw;
+        margin: 2vh 10vw;
+    }
+
+    .Desc{
+        margin: 1rem 0;
+        font-size: 1.125rem;
+    }
+
+    .Block{
+        font-size: 2.5rem;
+        margin-right: 0.5rem;
+        padding: 0.25rem 0.65rem ;
+    }
+
+    .Timer{
+        margin: 5vh 1vw;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .Timer p p {
+        font-size: 1.25rem;
+    }
+
+    .Button{
+        margin: 0 15vw;
+    }
 }

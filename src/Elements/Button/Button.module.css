@@ -13,3 +13,10 @@
     background: rgb(85, 27, 22);;
     border: 1px solid rgb(85, 27, 22);
 }
+
+@media (max-width: 600px){
+    .AddToCart{
+        font-size: 1.65rem;
+        margin: 3vh 0;
+    }
+}

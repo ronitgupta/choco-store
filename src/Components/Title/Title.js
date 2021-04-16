@@ -8,7 +8,7 @@ const Title = props => {
             <p className={classes.Heading}>Choco Store</p>
             <p className={classes.Description}>New Delhi's best selection of fresh, gourmet chocolate and chocolate gifts</p>
             <p className={classes.Line}>____</p>
-            <button className={classes.Button}> OUR PRODUCTS</button>
+            <button className={classes.Button}> <a href="#products">OUR PRODUCTS</a> </button>
         </div>
     )
 }

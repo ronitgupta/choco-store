@@ -1,17 +1,23 @@
 import React from 'react';
 
 import classes from './Testimonials.module.css';
-import Testimonial from './Testiminial/Testimonial';
+import Testimonial from './Testimonial/Testimonial';
 
 const Testimonials = props => {
     const desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet maximus varius. Donec rhoncus magna ac enim lacinia, vel finibus nulla varius. Curabitur ornare eleifend.";
 
-    const marginEffect = {
+    let marginEffect = {
         marginLeft: "5vw"
     }
 
+    if(window.innerWidth < 600){
+        marginEffect = {
+            marginLeft : "10vw"
+        }
+    }
+
     return (
-        <div className={classes.Testimonials} >
+        <div id="testimonials" className={classes.Testimonials} >
             <h1 className={classes.Title}>Testimonials</h1>
             <Testimonial 
                 desc={desc}

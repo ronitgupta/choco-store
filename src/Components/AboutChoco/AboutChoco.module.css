@@ -2,7 +2,7 @@
     background: url('../../assets/images/coco-production.jpg') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     margin: 0;
     padding: 0;
 }
@@ -37,4 +37,27 @@
     color: rgb(246, 246, 246);
     margin: 5% 10%;
     font-size: 1.25rem;
+}
+
+@media(max-width: 600px){
+    .AboutChoco{
+        height: auto;
+    }
+    
+    .Section{
+        margin: 0;
+        padding: 0;
+        background: rgb(0, 0, 0,0.6);
+        height: auto;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .Heading{
+        padding-top: 2.5rem;
+        font-family: cursive;
+        font-size: 3rem;
+    }
+    
 }

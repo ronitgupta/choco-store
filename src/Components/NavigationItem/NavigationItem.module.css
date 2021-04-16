@@ -10,14 +10,16 @@
     top: 0;
 }
 
-.NavigationItem a{
+.NavigationItem a,
+.NavigationItem p{
     margin: 0;
     padding: 2% 1vmax;
     color: white;
     text-decoration: none;
 }
 
-.NavigationItem a:hover{
+.NavigationItem a:hover,
+.NavigationItem p:hover{
     background-color: rgb(90, 17, 1);
     cursor: pointer;
 }
@@ -26,3 +28,49 @@
     width: 7%;
     height: 5%;
 } 
+
+@media(max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .NavigationItem{
+        width: 100vw;
+        display: inline;
+        height: 10vh;
+        padding : 0;
+        margin: 0;
+    }
+
+    .NavigationItem a,
+    .NavigationItem p {
+        display: none;
+    }
+
+    .MenuLine{
+        width: 60px;
+        height: 5px;
+        background-color: white;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .Menu{
+        margin: 0vh 6px;
+        padding: 0;
+        box-sizing: border-box;
+        padding-bottom: 0;
+        display: inline-block;
+        max-width: 20vw;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .NavigationItem img{
+        display: inline-block;
+        width: 30%;
+        margin-left: 17vw;
+        height: 90%;
+    }
+}

@@ -1,5 +1,5 @@
 .Awards{
-    height: 55vh;
+    height: auto;
     width: 100vw;
     background-color: rgb(19, 8, 0);
     margin: 0;
@@ -26,4 +26,20 @@
     margin: 0;
     font-size: 1rem;
     color: darkgray;
+}
+
+@media(max-width: 600px){
+    .Awards{
+        padding: 4vh 10vw;
+        display: flex;
+        flex-flow: column;
+        width: 80vw;
+    }
+    
+    .Awards section{
+        margin: 0 0vw;
+        padding: 5vh 10vw;
+        display: block;
+        
+    }
 }

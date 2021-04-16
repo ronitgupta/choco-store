@@ -3,8 +3,12 @@ import React from 'react';
 import classes from './ContactUs.module.css';
 
 const ContactUs = props => {
+
+    let rowsNumber = 10;
+    if(window.innerWidth <= 600){rowsNumber = 7} 
+
     return(
-        <div className={classes.ContactUs}>
+        <div id="contact-us" className={classes.ContactUs}>
             <h2 className={classes.Heading}>Contact Us</h2>
             <p className={classes.Line}>______</p>
             <form className={classes.Form}>
@@ -13,8 +17,8 @@ const ContactUs = props => {
                 <label className={classes.Label} for="email">E-mail Address:</label>
                 <input required placeholder="E-Mail" id="email" type="email" />
                 <label className={classes.Label} for="message">Message:</label>
-                <textarea rows={10} id="message" placeholder="Message..." maxLength="2000" required 
- />
+                <textarea rows={rowsNumber} id="message" placeholder="Message..." maxLength="2000" required  />
+                <input type="submit" value="Submit" />
             </form>
         </div>
     );

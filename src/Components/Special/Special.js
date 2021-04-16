@@ -1,16 +1,18 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 import classes from './Special.module.css';
 import PremiumChoco from '../../assets/images/premium-choco.png';
 import Button from '../../Elements/Button/Button';
+import * as actions from '../../Store/Actions';
 
 const Special = props => {
     return(
-        <div className={classes.Special}>
+        <div id="special" className={classes.Special}>
             <h2>Special!</h2>
             <p className={classes.Line}>______</p>
             <div className={classes.Container}>
-                <img className={classes.Image} src={PremiumChoco} />
+                <img className={classes.Image} alt="chocolate box"  src={PremiumChoco} />
                 <div className={classes.About}>
                     <p className={classes.Title}>Choco Box</p>
                     <p className={classes.Desc}>Choco Box has all the fines chocolates which can turn your mood
@@ -24,11 +26,15 @@ const Special = props => {
                         <p className={classes.Block}>59<p>Sec</p></p>
                             </p>
                     <p className={classes.Price}>$499.00</p>
-                    <div className={classes.Button}><Button/></div>
+                    <div className={classes.Button} onClick={props.specialIncrement}><Button/></div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default Special;
+const mapDispatchToProps = dispatch => ({
+    specialIncrement : () => dispatch({ type : actions.INCREMENT, product : actions.SPECIAL})
+})
+
+export default connect(null,mapDispatchToProps)(Special);

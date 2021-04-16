@@ -9,18 +9,18 @@ const News = props => {
             <p className={classes.Title}>news</p>
             <p className={classes.Line}>_____</p>
             
-            <div className={classes.container}>
+            <div id="news" className={classes.container}>
                 <span>Left</span>
                 <a href="http://en.wikipedia.org/">
-                    <img className={classes.Image} src={NewsPic} />
+                    <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something</p>
                 </a>
                 <a href="http://en.wikipedia.org/">
-                    <img className={classes.Image} src={NewsPic} />
+                    <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something</p>
                 </a>
                 <a href="http://en.wikipedia.org/">
-                    <img className={classes.Image} src={NewsPic} />
+                    <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something Something Something</p>
                 </a>
                 <span>Right</span>

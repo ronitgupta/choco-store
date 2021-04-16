@@ -4,7 +4,7 @@ import classes from './History.module.css';
 
 const History = props => {
     return (
-        <div className={classes.main}>
+        <div id="history" className={classes.main}>
             <div class={classes.history}>
                 <div className={`${classes.box} ${classes.left}`}>
                     <div className={classes.content}>

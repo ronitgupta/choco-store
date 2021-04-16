@@ -6,7 +6,7 @@ import classes from './Awards.module.css';
 
 const Awards = props => {
     return(
-        <div className={classes.Awards}>
+        <div id="awards" className={classes.Awards}>
             <section>
                 <p><FontAwesomeIcon icon={faTasks} /></p>
                 <p className={classes.Number}>250</p>
