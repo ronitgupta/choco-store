@@ -10,15 +10,35 @@ const initialState = {
 
 const reducer = (state= initialState, action) => {
     if(action.type === actions.INCREMENT && action.product === actions.NORMAL){
-        return {
-            ...state,
-            products : state.products + 1
+        if(state.products < 9){
+            return {
+                ...state,
+                products : state.products + 1
+            }
         }
     }
     if(action.type === actions.INCREMENT && action.product === actions.SPECIAL){
-        return {
-            ...state,
-            specialProducts : state.specialProducts + 1
+        if(state.specialProducts < 9){
+            return {
+                ...state,
+                specialProducts : state.specialProducts + 1
+            }
+        }
+    }
+    if(action.type === actions.DECREMENT && action.product === actions.NORMAL){
+        if(state.products > 0){
+            return {
+                ...state,
+                products : state.products - 1
+            }
+        }
+    }
+    if(action.type === actions.DECREMENT && action.product === actions.SPECIAL){
+        if(state.specialProducts > 0){
+            return {
+                ...state,
+                specialProducts : state.specialProducts - 1
+            }
         }
     }
     if(action.type === actions.LOGINCLICKED){

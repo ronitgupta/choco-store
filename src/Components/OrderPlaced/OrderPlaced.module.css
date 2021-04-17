@@ -1,0 +1,49 @@
+.OrderPlaced{
+    z-index: 1000;
+    position: fixed;
+    top: 28vh;
+    left: 25vw;
+    width: 50vw;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    display: block;
+}
+
+.OrderPlaced h2{
+    font-size: 1.75rem;
+    color: white;
+    background: green;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.Summary{
+    margin : 15vh 8vw;
+    font-size: 1.125rem;
+}
+
+.HomePage{
+    font-size: 1.25rem;
+    color: white;
+    background: rgb(47, 17, 1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 5vh 17vw;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.Summary p span{
+    font-weight: bold;    
+}
+
+.Title{
+    text-decoration: double underline rgb(71, 71, 71);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: rgb(71, 71, 71);
+}

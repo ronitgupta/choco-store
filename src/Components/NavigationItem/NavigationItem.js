@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/images/choco-logo.png';
 import classes from './NavigationItem.module.css';
@@ -23,7 +24,7 @@ const NavigationItem = (props) =>{
                 <a href="#history">About Us</a>
                 <a href="#news">News</a>
                 <a href="#contact-us">Contact Us</a>
-                <a href="/cart">Cart</a>
+                <Link to="/cart">Cart</Link>
                 {props.isAuthenticated ? 
                     <p>Logout</p> 
                     :<p onClick={props.loginClicked} >Login/Sign Up</p>

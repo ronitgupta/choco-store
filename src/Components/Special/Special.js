@@ -25,8 +25,8 @@ const Special = props => {
                         <p className={classes.Block}>59<p>Min</p></p>
                         <p className={classes.Block}>59<p>Sec</p></p>
                             </p>
-                    <p className={classes.Price}>$499.00</p>
-                    <div className={classes.Button} onClick={props.specialIncrement}><Button/></div>
+                    <p className={classes.Price}>$299.00</p>
+                    <div className={classes.Button} onClick={props.specialIncrement}><Button  text="Add to Cart"/></div>
                 </div>
             </div>
         </div>

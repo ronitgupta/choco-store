@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import {Route, withRouter} from 'react-router-dom';
 
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Title from '../Title/Title';
@@ -12,6 +13,7 @@ import Awards from '../Awards/Awards';
 import History from '../History/History';
 import ContactUs from '../ContactUs/ContactUs';
 import Login from '../Login/Login';
+import Cart from '../Cart/Cart';
 
 const MainPage = props => {
 
@@ -21,19 +23,25 @@ const MainPage = props => {
         document.body.style.overflow = 'initial';
     }, [props.loginClicked])
 
+
     return (
         <React.Fragment>
             <NavigationItem />
-            <Title />
-            <Products />
-            <Testimonials />
-            <Special />
-            <AboutChoco />
-            <Awards />
-            <History />
-            <News />
-            <ContactUs />
+                {props.location.pathname === "/" ?
+                <React.Fragment>
+                    <Title />
+                    <Products />
+                    <Testimonials />
+                    <Special />
+                    <AboutChoco />
+                    <Awards />
+                    <History />
+                    <News />
+                    <ContactUs />
+                </React.Fragment>
+                : null}
             {props.loginClicked ? <Login /> : null}
+            <Route path="/cart" component={Cart} exact /> 
         </React.Fragment>
     );
 }
@@ -42,4 +50,4 @@ const mapStateToProps = state => ({
     loginClicked : state.loginClicked,
 });
 
-export default connect(mapStateToProps)(MainPage);
+export default connect(mapStateToProps)(withRouter(MainPage));

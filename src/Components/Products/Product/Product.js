@@ -13,8 +13,8 @@ const Product = props => {
         <div className={classes.Product}>
             <img className={classes.Image} alt="chocolate flower"  src={ChocoFlower} />
             <p className={classes.Title}>Product One</p>
-            <p className={classes.Price}>$300.00</p>
-            <div onClick={props.productIncrement}><Button /></div>
+            <p className={classes.Price}>$199.00</p>
+            <div onClick={props.productIncrement}><Button text="Add to Cart" /></div>
         </div>
     );
 }
