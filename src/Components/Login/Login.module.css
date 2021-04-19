@@ -68,12 +68,23 @@
     cursor: not-allowed;
 }
 
-.Match{
+.Match,
+.GoodPassword{
     font-size: 0.75rem;
     color: green;
 }
 
-.UnMatch{
+.UnMatch,
+.PasswordRegex{
     font-size: 0.75rem;
     color: red;
+}
+
+.EmailExists{
+    display: none;
+    background: red;
+    border : none;
+    text-align: left;
+    font-size: 1.25rem;
+    border-radius: none;
 }
