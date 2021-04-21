@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import {Route, withRouter} from 'react-router-dom';
+import {Redirect, Route, withRouter} from 'react-router-dom';
 
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Title from '../Title/Title';
@@ -16,6 +16,8 @@ import Login from '../Login/Login';
 import Cart from '../Cart/Cart';
 
 const MainPage = props => {
+
+    //
 
     useEffect(() => {
         props.loginClicked ? 
@@ -41,13 +43,14 @@ const MainPage = props => {
                 </React.Fragment>
                 : null}
             {props.loginClicked ? <Login /> : null}
-            <Route path="/cart" component={Cart} exact /> 
+            {props.authentication ? <Route path="/cart" component={Cart} exact />: <Redirect to="/" /> }
         </React.Fragment>
     );
 }
 
 const mapStateToProps = state => ({
     loginClicked : state.loginClicked,
+    authentication : state.authentication
 });
 
 export default connect(mapStateToProps)(withRouter(MainPage));

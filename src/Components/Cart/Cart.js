@@ -64,7 +64,7 @@ const Cart = props => {
     return(
         <React.Fragment>
             <div className={classes.Cart}>
-                <h2 onClick={ronit}> test@gmail.com's Cart</h2>
+                <h2 onClick={ronit}> {localStorage.getItem('email')}'s Cart</h2>
                 <div className={classes.Container}>
                     <table className={classes.Inner}>
                         <tr>

@@ -8,6 +8,16 @@ import * as actions from '../../Store/Actions';
 
 const NavigationItem = (props) =>{
 
+    // Logout Action
+
+    const logout = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('userId');
+        localStorage.removeItem('email');
+        localStorage.removeItem('expiresIn');
+        props.logoutClicked();
+    }
+
     return (
         <React.Fragment>
             <div className={classes.NavigationItem}>
@@ -24,9 +34,9 @@ const NavigationItem = (props) =>{
                 <a href="#history">About Us</a>
                 <a href="#news">News</a>
                 <a href="#contact-us">Contact Us</a>
-                <Link to="/cart">Cart</Link>
+                {props.isAuthenticated?<Link to="/cart">Cart</Link>: null}
                 {props.isAuthenticated ? 
-                    <p>Logout</p> 
+                    <p onClick={logout}>Logout</p> 
                     :<p onClick={props.loginClicked} >Login/Sign Up</p>
                     }
             </div>
@@ -39,7 +49,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    loginClicked : () => dispatch({type : actions.LOGINCLICKED})
+    loginClicked : () => dispatch({type : actions.LOGINCLICKED}),
+    logoutClicked : () => dispatch({type : actions.lOGOUTCLICKED})
 });
 
 export default connect(mapStateToProps,mapDispatchToProps)(NavigationItem);

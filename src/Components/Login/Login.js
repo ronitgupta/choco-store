@@ -7,6 +7,22 @@ import * as actions from '../../Store/Actions';
 
 const Login = props => {
 
+    // Retreving Login Data
+
+    const loginData = e =>{
+        e.preventDefault();
+        const loginEmail = document.querySelector('#login_email').value;
+        const loginpassword = document.querySelector('#login_password').value;
+        const dataPacket = {
+            email : loginEmail,
+            password : loginpassword,
+            returnSecureToken : true
+        }
+        props.login(dataPacket);
+        props.removeLogin();   
+    }
+
+  
     // Retreving Signup Data
     
     const signupData = e => {
@@ -46,10 +62,11 @@ const Login = props => {
 
         const password = document.querySelector('#signup_password').value;
         if(password.length < 8){
-            setGoodPassword(<span className={classes.PasswordRegex}>Password Must be atleast 8 characters</span>)
+            setGoodPassword(<span className={classes.PasswordRegex}>Password Must be atleast 8 characters</span>);
+            document.querySelector('#confirm_password').disabled = true;
         } else{
             setGoodPassword(<span className={classes.GoodPassword}>Good Password</span>)
-            document.querySelector('#confirm_password').disabled = false
+            document.querySelector('#confirm_password').disabled = false;
         }
         passwordValidator();
     }
@@ -84,7 +101,7 @@ const Login = props => {
             )
     } else { 
         form = (
-            <form>
+            <form onSubmit={loginData}>
                 <label for="email">Email Address</label>
                 <input id="login_email" placeholder="Enter Email Address" required type="email" />
                 <label for="login_password">Password</label>
@@ -111,13 +128,11 @@ const Login = props => {
     );
 }
 
-const mapStatetoProps = state => ({
-    emailExist : state.emailExists
-});
-
 const mapDispatchToProps = dispatch => ({
     hideLogin : () => dispatch({type : actions.LOGINHIDE}),
-    signup : (dataPacket) => dispatch({type : actions.SIGNINGUP, data : dataPacket})
+    signup : (dataPacket) => dispatch({type : actions.SIGNINGUP, data : dataPacket}),
+    login : (dataPacket) => dispatch({type : actions.LOGIN, data : dataPacket}),
+    removeLogin : () => dispatch({type : actions.REMOVELOGIN}),
 })
 
-export default connect(mapStatetoProps,mapDispatchToProps)(Login);
+export default connect(null,mapDispatchToProps)(Login);

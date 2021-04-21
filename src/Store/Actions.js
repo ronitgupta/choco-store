@@ -5,3 +5,6 @@ export const SPECIAL = 'SPECIAL';
 export const LOGINCLICKED = 'LOGINCLICKED';
 export const LOGINHIDE = 'LOGINHIDE';
 export const SIGNINGUP = 'SIGNINGUP';
+export const LOGIN = 'LOGIN';
+export const lOGOUTCLICKED = 'LOGOUTCLiCKED';
+export const REMOVELOGIN = 'REMOVELOGIN';
