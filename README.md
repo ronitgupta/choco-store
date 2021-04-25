@@ -1,6 +1,6 @@
 # [Choco Store](https://choco-store.herokuapp.com/)
 
-[Image of HomePage](https://raw.githubusercontent.com/ronitgupta/choco-store/master/HomePage.png)
+![Image of HomePage](https://raw.githubusercontent.com/ronitgupta/choco-store/master/HomePage.png)
 
 Choco Store is an eCommerce website which lets user order chocolate products online.
 
