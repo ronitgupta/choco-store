@@ -1,6 +1,6 @@
-# [Choco Store] (https://choco-store.herokuapp.com/)
+# [Choco Store](https://choco-store.herokuapp.com/)
 
-[Image of HomePage] ()
+[Image of HomePage](https://raw.githubusercontent.com/ronitgupta/choco-store/master/HomePage.png)
 
 Choco Store is an eCommerce website which lets user order chocolate products online.
 
@@ -19,22 +19,26 @@ It has two types of products: Choco and Special Choco. Both these products can b
 
 1. Prepare the environment
 
-    Install npm by installing [Node.js] (https://nodejs.org/)
+    Install npm by installing [Node.js](https://nodejs.org/)
 
 2. Clone the project and install the dependencies:
 
-`$ git clone https://github.com/ronitgupta/choco-store.git`
-`$ cd choco-store`
-`$ npm install`
+```
+$ git clone https://github.com/ronitgupta/choco-store.git
+$ cd choco-store
+$ npm install
+```
+
 
 3. Run Development Server
 
 `$ npm start`
 
-Go to [localhost:3000] (http://localhost:3000) If not redirect automatically.
+Go to [localhost:3000](http://localhost:3000) If not redirect automatically.
 
 ## Tasks available
 
 - `$ npm start` : Starts the development server
 - `$ npm build` : Builds the production version of the app in the Build Folder
 - `$ npm test`  : Use for testing purpose of the app
+- `$ npm push`  : Pushes the latest branch to git
