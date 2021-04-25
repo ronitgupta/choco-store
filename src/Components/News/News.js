@@ -10,20 +10,18 @@ const News = props => {
             <p className={classes.Line}>_____</p>
             
             <div id="news" className={classes.container}>
-                <span>Left</span>
-                <a href="http://en.wikipedia.org/">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Chocolate">
                     <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something</p>
                 </a>
-                <a href="http://en.wikipedia.org/">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Chocolate">
                     <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something</p>
                 </a>
-                <a href="http://en.wikipedia.org/">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Chocolate">
                     <img className={classes.Image} alt="News Thumbnail" src={NewsPic} />
                     <p>Something Something Something Something</p>
                 </a>
-                <span>Right</span>
             </div>
             
         </div>
