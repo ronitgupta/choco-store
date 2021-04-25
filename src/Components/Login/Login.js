@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {connect} from 'react-redux';
 
 import Backdrop from '../../Elements/Backdrop/Backdrop';
@@ -6,6 +6,16 @@ import classes from './Login.module.css';
 import * as actions from '../../Store/Actions';
 
 const Login = props => {
+
+    // Login Alert
+    
+    useEffect(() => {
+        if(props.loginAlert != null){
+            alert(props.loginAlert);
+            props.loginAlertNull();
+        }
+         
+    },[props.loginAlert])
 
     // Retreving Login Data
 
@@ -18,9 +28,18 @@ const Login = props => {
             password : loginpassword,
             returnSecureToken : true
         }
-        props.login(dataPacket);
-        props.removeLogin();   
+        props.login(dataPacket); 
     }
+
+    // Singup Alerts
+
+    useEffect(() => {
+        if(props.signupAlert != null){
+            alert(props.signupAlert);
+            props.signupAlertNull();
+        }
+         
+    },[props.signupAlert])
 
   
     // Retreving Signup Data
@@ -128,11 +147,17 @@ const Login = props => {
     );
 }
 
+const mapStateToProps = state => ({
+    signupAlert : state.signupAlert,
+    loginAlert : state.loginAlert
+});
+
 const mapDispatchToProps = dispatch => ({
     hideLogin : () => dispatch({type : actions.LOGINHIDE}),
-    signup : (dataPacket) => dispatch({type : actions.SIGNINGUP, data : dataPacket}),
-    login : (dataPacket) => dispatch({type : actions.LOGIN, data : dataPacket}),
-    removeLogin : () => dispatch({type : actions.REMOVELOGIN}),
+    signup : (dataPacket) => dispatch(actions.SIGNINGUP(dataPacket)),
+    login : (dataPacket) => dispatch(actions.LOGIN(dataPacket)),
+    loginAlertNull : () => dispatch({type: actions.LOGINALERTNULL}),
+    signupAlertNull : () => dispatch({type: actions.SIGNUPALERTNULL})
 })
 
-export default connect(null,mapDispatchToProps)(Login);
+export default connect(mapStateToProps,mapDispatchToProps)(Login);

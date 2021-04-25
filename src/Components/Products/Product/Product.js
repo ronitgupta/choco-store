@@ -20,7 +20,7 @@ const Product = props => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    productIncrement : () => dispatch({type : actions.INCREMENT, product : actions.NORMAL})
+    productIncrement : () => dispatch({type : actions.INCREMENT, product : actions.NORMAL}),
 });
 
 export default connect(null,mapDispatchToProps)(Product);

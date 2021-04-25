@@ -43,7 +43,7 @@ const MainPage = props => {
                 </React.Fragment>
                 : null}
             {props.loginClicked ? <Login /> : null}
-            {props.authentication ? <Route path="/cart" component={Cart} exact />: <Redirect to="/" /> }
+            {localStorage.getItem('token') !== null  ? <Route path="/cart" component={Cart} exact />: <Redirect to="/" /> }
         </React.Fragment>
     );
 }

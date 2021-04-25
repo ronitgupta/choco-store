@@ -88,3 +88,45 @@
     font-size: 1.25rem;
     border-radius: none;
 }
+
+@media(max-width: 600px){
+    .Login{
+        top: 20vh;
+        left: 12.5vw;
+        width: 75vw;
+    }
+
+    .Login p{
+        font-size: 1.25rem;
+    }
+    
+    .Login form input{
+        display: inline-block;
+        font-size: 1rem;
+        width: 50vw;
+    }
+    
+    .Match,
+    .GoodPassword{
+        font-size: 0.75rem;
+        color: green;
+        display: block;
+    }
+    
+    .UnMatch,
+    .PasswordRegex{
+        display: block;
+        font-size: 0.75rem;
+        color: red;
+    }
+    
+    .EmailExists{
+        display: none;
+        background: red;
+        border : none;
+        text-align: left;
+        font-size: 1.25rem;
+        border-radius: none;
+    }
+
+}
