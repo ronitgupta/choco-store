@@ -1,66 +1,40 @@
-## Available Scripts
+# [Choco Store] (https://choco-store.herokuapp.com/)
 
-In the project directory, you can run:
+[Image of HomePage] ()
 
-### `npm start`
+Choco Store is an eCommerce website which lets user order chocolate products online.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It has two types of products: Choco and Special Choco. Both these products can be added to the cart using the HomePage or Cart Page. Users must be logged in to visit the cart page for placing order. Users can register/signup using the login/SignUp Popup Box.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Responsive to Mobile Devices
+- Authentication
+- React-Router
+- Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Prepare the environment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Install npm by installing [Node.js] (https://nodejs.org/)
 
-### `npm run eject`
+2. Clone the project and install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`$ git clone https://github.com/ronitgupta/choco-store.git`
+`$ cd choco-store`
+`$ npm install`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run Development Server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`$ npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Go to [localhost:3000] (http://localhost:3000) If not redirect automatically.
 
-## Learn More
+## Tasks available
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `$ npm start` : Starts the development server
+- `$ npm build` : Builds the production version of the app in the Build Folder
+- `$ npm test`  : Use for testing purpose of the app
