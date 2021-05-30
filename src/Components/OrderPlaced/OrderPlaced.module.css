@@ -28,7 +28,7 @@
 .HomePage{
     font-size: 1.25rem;
     color: white;
-    background: rgb(47, 17, 1);
+    background: rgb(251, 198, 170);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     margin: 5vh 17vw;
@@ -46,4 +46,33 @@
     font-weight: bolder;
     font-size: 1.5rem;
     color: rgb(71, 71, 71);
+}
+
+@media(max-width: 600px){
+    .OrderPlaced{
+        top: 15vh;
+        left: 15vw;
+        width: 70vw;
+    }
+    
+    .OrderPlaced h2{
+        font-size: 1.25rem;
+        border-radius: 3rem;
+    }
+    
+    .HomePage{
+        font-size: 1.125rem;
+        color: white;
+        background: rgb(251, 198, 170);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        margin: 5vh 0;
+    }
+    
+    .Title{
+        text-decoration: double underline rgb(71, 71, 71);
+        font-weight: bolder;
+        font-size: 1.25rem;
+        color: rgb(71, 71, 71);
+    }
 }

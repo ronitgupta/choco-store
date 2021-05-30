@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import {NavLink} from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import classes from './OrderPlaced.module.css';
 const OrderPlaced = props => {
 
     // Price Calculator
-    let price = (props.choco * 199 ) + (props.specialChoco * 299)
+    let price = (props.choco * 199 ) + (props.specialChoco * 299);
 
     return (
         <React.Fragment>
@@ -23,6 +23,7 @@ const OrderPlaced = props => {
                     {props.specialChoco > 0?<p>Special Choco : <span>{props.specialChoco}</span></p>: null}
                     {props.choco > 0 || props.specialChoco > 0 ? <p>Total Paid: <span>${price}.00</span></p> : null}
                 </div>
+                
             </div>
         </React.Fragment>
     );
