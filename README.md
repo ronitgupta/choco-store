@@ -1,4 +1,4 @@
-# [Choco Store](https://choco-store.herokuapp.com/)
+# [Choco Store](https://master--nimble-clafoutis-a421ca.netlify.app/)
 
 ![Image of HomePage](https://raw.githubusercontent.com/ronitgupta/choco-store/master/HomePage.png)
 
